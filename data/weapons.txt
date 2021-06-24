@@ -79,6 +79,7 @@ outfit "Heavy Electron Turret"
 		sound "electron beam"
 		"hit effect" "electron impact"
 		"inaccuracy" .4
+		"turret turn" 2.3
 		"velocity" 450
 		"lifetime" 1
 		"reload" 1
@@ -129,6 +130,7 @@ outfit "Repulsor Beam"
 		sound "banisher"
 		"hit effect" "repulsor impact"
 		"inaccuracy" .4
+		"turret turn" 2.3
 		"velocity" 590
 		"lifetime" 1
 		"reload" 1

@@ -14,7 +14,6 @@ outfit "Engine Destabiliser"
 		sprite "projectile/Destabiliser"
 			"frame rate" 60
 		sound "destabiliser"
-		"hit effect" "destabiliser"
 		"inaccuracy" .7
 		"velocity" 500
 		"lifetime" 1
@@ -23,7 +22,7 @@ outfit "Engine Destabiliser"
 		"firing heat" 2.0
 		"shield damage" 2.3
 		"hull damage" 1.9
-		"slowing damage" -20
+		"slowing damage" 20
 		"hit force" 30
 	description "Kaltheim ships have frequently had problems with preventing enemy ships from jumping into hyperspace; while Phase Missiles are somewhat effective, they are also rather expensive and can be foiled by anti-missile systems."
 	description "	As a result, the Engine Destabiliser was built, designed to mess with the output of the target's engines, making their main thrusters and steering ineffective for a time."
@@ -53,6 +52,7 @@ outfit "Engine Destabiliser Turret"
 		sound "destabiliser"
 		"hit effect" "destabiliser2"
 		"inaccuracy" 1.2
+		"turret turn" 2.3
 		"velocity" 500
 		"lifetime" 1
 		"reload" 1
@@ -89,6 +89,7 @@ outfit "Heat Redistribution Ray"
 		sound "flamethrower"
 		"hit effect" "heat ray hit"
 		"inaccuracy" .4
+		"turret turn" 2.3
 		"velocity" 590
 		"lifetime" 1
 		"reload" 1
@@ -177,6 +178,7 @@ outfit "Kelvin Turret"
 		sound "disruptor"
 		"hit effect" "electron impact"
 		"inaccuracy" .4
+		"turret turn" 2.3
 		"velocity" 500
 		"lifetime" 1
 		"reload" 1

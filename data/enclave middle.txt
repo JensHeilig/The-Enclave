@@ -55,8 +55,8 @@ mission "Joining the Enclave"
 	on accept
 		event "joined the enclave"
 		"salary: Enclave" = 300
-		
-		
+
+
 mission "Enclave Middle 1A"
 	name "Retake New Asgard"
 	description "With the rest of the Enclave fleet, destroy all XSZ ships in the Svind system, then land on New Asgard."
@@ -90,7 +90,7 @@ mission "Enclave Middle 1A"
 			`	"Excellent," the Commodore replies. "We're setting off in a few hours; see me after the battle."`
 				accept
 		event "middle 1a ready"
-		
+
 	npc kill
 		personality staying vindictive
 		government "XSZ Corporation"
@@ -129,7 +129,7 @@ mission "Enclave Middle 1A"
 		system Innenheim
 		government "Enclave"
 		ship "Enclave Destroyer" "R.N.S. Severn"
-	
+
 	on enter Svind
 		dialog
 			`As you enter the system, your comms unit bursts to life with a crackle of static. It's the Commodore, shouting something- "They're nuclear!" as the first of the XSZ ships move into the range of the forward ships' scanners.`
@@ -167,8 +167,8 @@ mission "Enclave Middle 1A"
 			`	"You're in the navy now," Cathy replies, fixing you with a piercing stare. "Remember that next time you object to orders from your superiors." She storms off without another word as the soldiers begin lining up, ready to execute the XSZ officials.`
 				accept
 		event "battle for svind"
-				
-				
+
+
 mission "Enclave Middle 1B"
 	name "Escort prisoners"
 	description "Escort the <npc> and their fleet to <destination>, where the prisoners will be held."
@@ -190,12 +190,12 @@ mission "Enclave Middle 1B"
 		fleet
 			names "civilian"
 			variant
-				"Flurry" 5	
+				"Flurry" 5
 	on complete
 		dialog
 			`The transports land and quickly offload their prisoners. Time to head for Quaver.`
-				
-				
+
+
 mission "Enclave Middle 1C"
 	name "Reinforcements from Quaver"
 	description "Travel to <destination>, where you can pick up reinforcements for the Enclave ships on New Asgard."
@@ -219,8 +219,8 @@ mission "Enclave Middle 1C"
 			`You haven't dropped off the prisoners yet. Go to Ortite in the Ortus system, then return here.`
 	to complete
 		has "Enclave Middle 1B: done"
-	
-	
+
+
 mission "Enclave Middle 1D"
 	name "Reinforcements to New Asgard"
 	description "Escort the <npc> and their fleet to <destination>"
@@ -254,7 +254,7 @@ mission "Enclave Middle 1D"
 	on visit
 		dialog
 			`You have left the <npc> behind. Better take off and wait for them to arrive in the system.`
-			
+
 
 mission "Enclave Middle 2A"
 	name "Ceasefire negotiations"
@@ -281,13 +281,13 @@ mission "Enclave Middle 2A"
 					launch
 				`	"In an hour or two."`
 					accept
-					
+
 	npc accompany save
 		personality heroic vindictive escort
 		system Svind
 		government "Enclave"
 		ship "Enclave Destroyer" "R.N.S. Severn"
-	
+
 	on visit
 		dialog
 			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
@@ -299,7 +299,7 @@ mission "Enclave Middle 2A"
 				`When you touch down at the spaceport on Memorandum, Cathy's ship not far behind, you find that the diplomats you are meant to be picking up aren't even ready to leave yet. Looks like you've got some time to kill.`
 					accept
 
-					
+
 mission "Enclave Middle 2B"
 	name "Ceasefire negotiations"
 	description "Travel to <destination>, where the Enclave diplomats you are carrying will attempt to negotiate a ceasefire with XSZ."
@@ -316,22 +316,22 @@ mission "Enclave Middle 2B"
 		conversation
 			`Finally, after a few hours waiting, your five passengers are ready to leave. Cathy introduces you to them one by one- Maui Nalani, from Carmine; Lilija Ozolinsh, from Saal; Vinh Ngo, from Seminar; Thelma Harland, from Korine; and Andreas Floros, from Frodo. You shake their hands and greet them in what you assume is the norm for ambassadors; or at least, what you learned from Alondo during the war. You show them to their rooms on your ship and begin making preparations for takeoff.`
 				accept
-	
+
 	npc accompany save
 		personality heroic vindictive escort
 		system Cispia
 		government "Enclave"
 		ship "Enclave Destroyer" "R.N.S. Severn"
-		
+
 	on visit
 		dialog
 			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
-			
+
 	on fail
 		dialog
 			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
-			
-			
+
+
 mission "Enclave Middle 2C-A"
 	name "Government Evacuation"
 	description "Whilst the ceasefire lasts, travel to <destination> in order to pick up the major people in the Enclave's government and move them to safety."
@@ -408,20 +408,20 @@ mission "Enclave Middle 2C-A"
 			`	"Now then," the executive sitting at the head of the table begins. "How shall we begin?"`
 			`	The process of a ceasefire being negotiated continues for an agonisingly long time, until eventually, the diplomats seem to have arrived at a deal: a two-week ceasefire to allow both sides to move their civilians out of harm's way. While you suspect that XSZ did not agree to this out of regard for human life- more in order to conserve their workforce- it is undoubtedly good.`
 				accept
-			
+
 	npc accompany save
 		personality heroic vindictive escort
 		system Maduras
 		government "Enclave"
 		ship "Enclave Destroyer" "R.N.S. Severn"
-			
+
 	on visit
 		dialog
 			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
 	on fail
 		dialog
 			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
-			
+
 mission "Enclave Middle 2C-B"
 	name "Government Evacuation"
 	description "Travel to <destination> in order to pick up the major people in the Enclave's government and move them to safety."
@@ -433,8 +433,8 @@ mission "Enclave Middle 2C-B"
 		has "Enclave Middle 2B: done"
 	to fail
 		has "Enclave Middle 2C-A: active"
-		
-		
+
+
 mission "Enclave Middle 2D-A"
 	name "Government Evacuation"
 	description "Transport the Cabinet to <destination>, then return to Jumblar for orders."
@@ -453,8 +453,8 @@ mission "Enclave Middle 2D-A"
 	on complete
 		conversation
 			`When you land, the Cabinet members are escorted speedily off your ship and to the safety of a large compound on the outskirts of the spaceport city.`
-		
-				
+
+
 mission "Enclave Middle 2D-B"
 	name "Government Evacuation"
 	description "Transport the Cabinet to <destination>, then return to Jumblar for orders."
@@ -473,8 +473,8 @@ mission "Enclave Middle 2D-B"
 	on complete
 		conversation
 			`When you land, the Cabinet members are escorted speedily off your ship and to the safety of a large compound on the outskirts of the spaceport city.`
-				
-				
+
+
 mission "Enclave Middle 2E-A"
 	name "Return to Jumblar"
 	description "Return to <destination> for your next assignment."
@@ -485,20 +485,20 @@ mission "Enclave Middle 2E-A"
 			has "Enclave Middle 2C-A: done"
 	to complete
 			has "Enclave Middle 2D-A: done"
-			
+
 	npc accompany save
 		personality heroic vindictive escort
 		system Maduras
 		government "Enclave"
 		ship "Enclave Destroyer" "R.N.S. Severn"
-			
+
 	on visit
 		dialog
 			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
 	on fail
 		dialog
 			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
-	
+
 	on complete
 		conversation
 			`You touch down on Jumblar to find that Cathy has already landed and is waiting for you near the landing pads.`
@@ -526,8 +526,8 @@ mission "Enclave Middle 2E-A"
 					goto shoot
 			`	"Bye," Cathy says with a slight smile.`
 		"reputation: XSZ Corporation" = -500000
-		
-			
+
+
 mission "Enclave Middle 2E-B"
 	name "Return to Jumblar"
 	description "Return to <destination> for your next assignment."
@@ -566,8 +566,8 @@ mission "Enclave Middle 2E-B"
 			`	"Bye," Cathy says with a slight smile.`
 				accept
 		"reputation: XSZ Corporation" = -500000
-				
-				
+
+
 mission "Enclave Middle 3A"
 	name "Report to Jumblar"
 	description "Head straight to <destination> for orders regarding XSZ's latest attack."
@@ -606,8 +606,8 @@ mission "Enclave Middle 3A"
 			variant
 				"Enclave Destroyer" 2
 				"Sea Drake" 4
-				
-	
+
+
 mission "Enclave Middle 3B"
 	name "Retake Perihelion"
 	description "Accompany the Enclave fleets to <destination> as the first stage in the counterattack against XSZ."
@@ -620,7 +620,7 @@ mission "Enclave Middle 3B"
 		has "Enclave Middle 3A: done"
 	on offer
 		conversation
-			`Upon landing, you head immediately for the garrison on <source>.`
+			`Upon landing, you head immediately for the garrison on <origin>.`
 			choice
 				`	"Lieutenant <first> <last>, reporting for duty."`
 					goto me
@@ -651,7 +651,7 @@ mission "Enclave Middle 3B"
 				accept
 	on accept
 		event "middle 3b ready"
-	
+
 	npc
 		personality heroic vindictive escort
 		system Innenheim
@@ -692,7 +692,7 @@ mission "Enclave Middle 3B"
 			names "kor sestor fighter"
 			variant
 				"Scorched Earth" 3
-	
+
 	on complete
 		event "battle of perihelion"
 		event "kaltheim invasion"
@@ -725,7 +725,7 @@ mission "Enclave Middle 3B"
 					goto hostile
 				`	"It must be the Kaltheim."`
 			`	"The what?" Cathy says, looking at you somewhat cynically, clearly echoing the responses of the other officers present. "They're a species to the south," you say. "I've been there, thanks to my Jump Drive- I just never told anyone because they didn't seem like a threat."`
-			
+
 			label hat
 			`	"That may be so, Lieutenant," Kuznetsov replies, "But we need to mobilise again. We're trapped between XSZ and these aliens, so unless we want to be squashed like so many insects, we need to move back to Jumblar. XSZ is no longer a priority; we need to defend our space against these interlopers. Any questions?"`
 				goto questions

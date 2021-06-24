@@ -510,7 +510,7 @@ mission "Enclave Blue 2D"
 		system Innenheim
 		government Enclave
 		fleet
-			names "Enclave Capital"
+			names "republic capital"
 			variant
 				"Caesennia" 5
 	on visit
@@ -1423,7 +1423,7 @@ mission "Enclave Blue 4G"
 		event "kaltheim integration I" 14
 		event "kaltheim integration II" 21
 		event "kaltheim integration III" 28
-		event "morbosa" 31
+#		event "morbosa" 31
 		conversation
 			`"Excellent!" Feun'ragnam says excitedly as you hand the vial over to her. "There'll be no barrier to our research now- with any luck, our species is saved!"`
 			choice
@@ -1442,5 +1442,5 @@ mission "Enclave Blue 4G"
 				`	"Bye, then."`
 			label 1
 			`	"Goodbye indeed," Feun'ragnam says, awkwardly shaking your hand.`
-			`	(NOTE: THIS BRANCH OF THE STORYLINE IS FINISHED UNTIL v0.0.12, COMING THIS FALL)
+			`	(NOTE: THIS BRANCH OF THE STORYLINE IS FINISHED UNTIL v0.0.12, COMING THIS FALL)`
 				decline
