@@ -403,6 +403,7 @@ system Antithesis
 system Anvyu
 	pos 4898 608
 	government Enclave
+	attributes "wormhole"
 	habitable 425.92
 	link Five
 	link Ithaos
@@ -4903,6 +4904,7 @@ system Whuroxla
 
 system Xenos
 	pos -842.525 -376.208
+	attributes "wormhole"
 	government Uninhabited
 	habitable 625
 	asteroids "large rock" 1 4.0608
@@ -5132,7 +5134,7 @@ planet Era'lgin'bl
 	shipyard "Kaltheim Small"
 	outfitter "Kaltheim Basics"
 	outfitter "Kaltheim Advanced"
-	
+
 planet "Euclid Station"
 	attributes xsz
 	landscape land/space1
@@ -5534,3 +5536,7 @@ planet Ziv'rahk'ashgrir
 	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 
+planet "Enclave Wormhole"
+	government "Enclave Wormhole"
+	description ""
+	spaceport ""
